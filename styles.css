@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal_body {
+    flex-grow: 1;
+    background: #000000; /* Fully opaque black background */
+    height: 100%;
+    padding: 10px; /* Add padding to make the prompt more visible */
+    font-size: 14px; /* Increased font size for better readability */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for terminal */
+    color: #00FF00; /* Green text color for terminal */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.terminal_promt {
+    display: flex;
+    align-items: center;
+}
+
+.terminal_promt span {
+    margin-left: 4px;
+}
+
+.terminal_bling {
+    color: #39FF14; /* Classic neon green color */
+    text-shadow: 0 0 2px #39FF14, 0 0 4px #39FF14; /* Reduced glow effect */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.terminal_cursor {
+    display: none; /* Hide the separate cursor */
+}
+
+.terminal_input {
+    background: transparent;
+    border: none;
+    color: #39FF14; /* Matching neon green color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font */
+    font-size: 14px; /* Matching font size */
+    outline: none; /* Remove default outline */
+    caret-color: #39FF14; /* Neon green caret color */
+    flex: 1; /* Allow input to take remaining space */
+    padding: 0 4px; /* Small padding for spacing */
+    margin-left: 4px; /* Align with prompt text */
+}
+
+.terminal_line {
+    color: #00FF00; /* Matching neon green color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font */
+    font-size: 14px; /* Matching font size */
+}
+
+@keyframes curbl {
+    from, to {
+        background: #FFFFFF;
+    }
+    50% {
+        background: transparent;
+    }
+}

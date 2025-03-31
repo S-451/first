@@ -1,1 +1,22 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container" onclick="document.querySelector('.terminal_input').focus()">
+        <div class="terminal_body">
+            <div class="terminal_promt">
+                <span class="terminal_bling">S451@S451:~$</span>
+                <input type="text" class="terminal_input" autofocus spellcheck="false">
+            </div>
+        </div>
+    </div>
+    <audio id="startup-audio" src="startup.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
